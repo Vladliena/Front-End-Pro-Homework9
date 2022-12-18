@@ -23,7 +23,20 @@ for (let i = 0; i < numbersArray.length; i++){
     if (numbersArray[i] < minimalNumber)
         minimalNumber = numbersArray[i]
 }
-console.log(minimalNumber)
+console.log(`Минимальное число: ${minimalNumber} Индекс минимального числа ${numbersArray.indexOf(minimalNumber)}`)
 
 //Task 3
+
+let maximumNumber = numbersArray[0];
+
+
+for (let i = 0; i < numbersArray.length; i++){
+    if (numbersArray[i] > maximumNumber)
+        maximumNumber = numbersArray[i]
+}
+console.log(`Максимальное число: ${maximumNumber} Индекс минимального числа ${numbersArray.indexOf(maximumNumber)}`)
+
+//Task 4
+
+
 
