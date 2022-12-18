@@ -4,15 +4,15 @@ const numbersArray = [16, -37, 54, -4, 72, -56, 47, 4, -16, 25, -37, 46, 4, -51,
 // Task 1
 
 let result = 0;
-let value = [];
+let valueTask1 = [];
 
 for (let i = 0; i < numbersArray.length; i++) {
     if (numbersArray[i] > 0) {
         result += numbersArray[i];
-        value.push(numbersArray[i]);
+        valueTask1.push(numbersArray[i]);
     }
 }
-console.log(`Сумма : ${result} Количество: ${value.length}`)
+console.log(`Сумма : ${result} Количество позитивных чисел: ${valueTask1.length}`)
 
 //Task 2
 
@@ -38,5 +38,22 @@ console.log(`Максимальное число: ${maximumNumber} Индекс 
 
 //Task 4
 
+let valueTask4 = [];
 
+for (let i = 0; i < numbersArray.length; i++){
+    if (numbersArray[i] < 0){
+        valueTask4.push(numbersArray[i]);
+    }
+}
+console.log(`Количество негативных чисел: ${valueTask4.length}`)
 
+//Task 5
+
+let multiplication = 1;
+for (let i = 0; i < numbersArray.length; i++){
+    if (numbersArray[i] > 0){
+        multiplication = multiplication * numbersArray[i];
+    }
+}
+
+console.log(multiplication)
